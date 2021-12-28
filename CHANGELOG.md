@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.1.0 (2021-12-28)
+
+
+### Features
+
+* initial project([@nick](undefined/nick)) 434b01f
+
 ### [0.0.11](http://52.199.249.47:10022/thoth-pharaoh/game-hub/compare/v0.0.10...v0.0.11) (2021-08-25)
 
 
