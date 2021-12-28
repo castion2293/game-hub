@@ -1,0 +1,44 @@
+{
+    "name": "thoth-pharaoh/game-hub",
+    "description": "遊戲API串接模組",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nick",
+            "email": "nick@ifalo.com.tw"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.6",
+        "guzzlehttp/guzzle": "^7.3",
+        "thoth-pharaoh/logger": "^1.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pharaoh\\GameHub\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pharaoh\\GameHub\\Tests\\": "tests/"
+        },
+        "files": [
+            "tests/Helpers/holdingHelper.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pharaoh\\GameHub\\GameHubServiceProvider"
+            ],
+            "aliases": {
+                "GameHub": "Pharaoh\\GameHub\\Facades\\GameHub"
+            }
+        }
+    }
+}
